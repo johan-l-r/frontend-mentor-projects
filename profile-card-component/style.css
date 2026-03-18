@@ -3,8 +3,7 @@
   --secondary-bg-color: hsl(225, 10%, 92%);
 
   --main-txt-color: hsl(229, 23%, 23%);
-  --secondary-txt-color: hsl(227, 10%, 46%);
-}
+  --secondary-txt-color: hsl(227, 10%, 46%); }
 *, 
 *::before, 
 *::after {
@@ -29,15 +28,30 @@ body {
   text-align: center;
   width: 430px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2 );
 }
 .card__header {
   background-image: url("./assets/images/bg-pattern-card.svg");
   object-fit: cover;
-  height: 180px;
+  height: 170px;
+}
+.card__body {
+  position: relative;
+}
+.profile__info {
+  margin-block: 4.5rem 2rem;
 }
 .profile__picture {
+  position: absolute;
+  width: 115px;
+  border: 6px solid var(--secondary-bg-color);
   border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__footer {
+  padding-block: 2rem;
+  border-top: 0.1px solid rgba(0, 0, 0, 0.2);
 }
 .stats {
   display: flex;
