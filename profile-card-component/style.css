@@ -47,10 +47,19 @@ body {
 .profile__info {
   margin-block: 4.5rem 2rem;
 }
+.profile__name {
+  text-transform: capitalize;
+}
+.profile__name, 
+.stat__value {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
 .profile__age, 
 .profile__location, 
 .stat__property{
   color: var(--secondary-txt-color);
+  font-weight: 400;
 }
 .profile__location {
   margin-top: 0.5rem;
@@ -72,4 +81,7 @@ body {
 }
 .stat * {
   display: block;
+}
+.stat__property {
+  text-transform: capitalize;
 }
